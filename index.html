@@ -3,103 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Trofimov CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- cellspacing="15" - указывает на расстояние между границами ячеек -->
-    <table cellspacing="15">
-        <tr>
-            <td>
-                 <img src="https://w-dog.ru/wallpapers/5/18/289291145046987/evropejskaya-koshka-dikij-kot-morda-vzglyad.jpg" alt="тут кот " width="200">
-            </td>
-            <td>
-                <h1>Трофимов Андрей Юрьевич</h1>
-                <p><em>Я студент <strong>НИУ МЭИ</strong></em></p>
-                <p>Я люблю долбить железо в зале</p>  
-            </td>
-        </tr>
-    </table>
+    <div class="container">    
+        <!-- cellspacing="15" - указывает на расстояние между границами ячеек -->
+         <!--   <table cellspacing="15">
+            <tr>
+                <td> -->
+                    
+                    
+                <!--    </td>
+                <td> -->
+                
+         <!--             </td>
+            </tr>
+        </table>
+         -->
 
-    <hr>
- 
-    <h2>Мои социальные сети</h2>
-   <!--  target="_blank" - для того, чтобы ссылка открывалась в другом окне -->
-    <ul type="square">
-        <li><a href="https://vk.com/id115582748" target="_blank">VK</a></li>
-    </ul>
+        <div class="info">
+            <img src="https://w-dog.ru/wallpapers/5/18/289291145046987/evropejskaya-koshka-dikij-kot-morda-vzglyad.jpg" alt="тут кот " width="200" class="avatar">
+            <div class="info-text">
+                <h1>Трофимов Андрей</h1>
+                <p>Я студент <strong>НИУ МЭИ</strong><p>
+                
+                <h4>Мои социальные сети</h4>
+                <!--  target="_blank" - для того, чтобы ссылка открывалась в другом окне -->
+                <a href="https://www.youtube.com/channel/UC_yNnXxzGxGtcEErE7321Sw" target="_blank">YouTube</a>
+                |
+                <a href="https://vk.com/id115582748" target="_blank">VK</a>
+            </div>
+        </div>
+
+        <div class="card bg-lawgreen" >
+            <h2>Мои хобби</h2>
+            <ol type="1" class="list">
+                <li>GYM</li>
+                <li>World of Warcraft</li>
+                <li>Книги</li>
+            </ol>
+        </div>
+
+        
+        <div class="card bg-yellow">
+            <!-- tr - строка, td - колонка -->
+            <h2>Опыт учебы в МЭИ</h2>
+            <table class="table">
+                <tr>
+                    <th>Институт</th>
+                    <th>Кафедра</th>
+                    <th>Группа</th>
+                    <th>Год поступления</th>
+                </tr> 
+                <tr>
+                    <td>ИРЭ</td>
+                    <td>Радиотехника</td>
+                    <td>ЭР-11-17</td>
+                    <td>2017</td>
+                </tr> 
+                <tr>
+                    <td>ИРЭ</td>
+                    <td>Радиотехника</td>
+                    <td>ЭР-11м-21</td>
+                    <td>2021</td>
+                </tr> 
+            </table>
+        </div> 
+
+        
+        <div class="card bg-purple">
+            <h2>YouTube курсы</h2>
+            <ul class="linklist">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Bluxbh9CaQ0&t">JavaScript Основы для Начинающих - Полный Курс за 6 часов [2020]</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=WlBrhM1_t5k">WebStorm – Полный Курс [2021]</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=n9uCgUzfeRQ">Docker для Начинающих - Полный Курс [2021]</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="contact">
+        <!-- <form> - представляет (собой) раздел документа, содержащий интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер.  -->
+            <h2>Связаться со мной</h2>
+            <!-- action - по какому пути будет обрабатываться форма (php или удалённый сервер) -->
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <!-- <label> - название input -->
+                        <label for="name">Ваше имя:</label>
+                        <!-- <input> - для ввода -->
+                        <!-- type - для типа параметра, который вводим -->
+                        <!-- id - связка с for, если значение одинаковое, то при тыки на "Ваше имя" будет сразу перенос на строку ввода -->
+                        <!-- placeholder - для отображения текса, когда поле пустое -->
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш Email...">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea name="" id="text" cols="30" rows="5"></textarea>
+                </div>
+                
+                <div>
+                    <!-- submit - делает кнопку отправить -->
+                    <!-- value - заменяет "отправить" на вставленное слово -->
+                    <input class="btn" type="submit" value="Связаться!">
+                </div>
+            </form>
+        </div>
+        <div class="position">
+                <div class="box">
+                    
+                </div>
+        </div>
+    </div>
     
-    <hr>
-
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>GYM</li>
-        <li>World of Warcraft</li>
-        <li>Книги</li>
-    </ol>
-
-    <hr>
-
-    <!-- tr - строка, td - колонка -->
-    <h2>Опыт учебы в МЭИ</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Институт</th>
-                <th>Кафедра</th>
-                <th>Группа</th>
-                <th>Год поступления</th>
-            </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td>ИРЭ</td>
-                <td>Радиотехника</td>
-                <td>ЭР-11-17</td>
-                <td>2017</td>
-            </tr> 
-        </tbody>
-        <tfoot></tfoot>
-        
-        
-
-    </table>
-
-    <hr>
-
-    <h2>YouTube курсы</h2>
-    <a href="Youtube.html" target="_blank">Посмотреть курс</a>
-
-    <hr>
-
-    <!-- <form> - представляет (собой) раздел документа, содержащий интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер.  -->
-    <h2>Связаться со мной</h2>
-    <!-- action - по какому пути будет обрабатываться форма (php или удалённый сервер) -->
-    <form action="/">
-        <!-- <label> - название input -->
-        <label for="name">Ваше имя:</label>
-        <!-- <input> - для ввода -->
-        <!-- type - для типа параметра, который вводим -->
-        <!-- id - связка с for, если значение одинаковое, то при тыки на "Ваше имя" будет сразу перенос на строку ввода -->
-        <!-- placeholder - для отображения текса, когда поле пустое -->
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
-        <br>
-
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите ваш Email...">
-
-        <br>
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="text" cols="30" rows="5"></textarea>
-
-        <br>
-        
-        <!-- submit - делает кнопку отправить -->
-        <!-- value - заменяет "отправить" на вставленное слово -->
-        <input type="submit" value="Связаться!">
-    </form>
 </body>
 </html>
